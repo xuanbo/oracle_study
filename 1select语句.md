@@ -1,12 +1,13 @@
 #	SELECT 语句
-##	格式
-SELECT * | {[DISTINCT] column | expression [alias],...} 
+##	1.格式
+SELECT * | {[DISTINCT] column | expression [alias],...}  
 FROM table;
 *	SELECT 表示要取哪些列
 *	FROM 表示要从哪些表中取
 
-SQL语句中的数学表达式：对于数值和日期型字段，可以进行 “加减乘除”
-例如：SELECT name, salary, salary + 300 FROM employees;
+SQL语句中的数学表达式：对于数值和日期型字段，可以进行 “加减乘除”   
+例如：SELECT name, salary, salary + 300 FROM employees;   
+
 <table>
 	<tr>
 		<td>name</td>
@@ -28,12 +29,12 @@ SQL语句中的数学表达式：对于数值和日期型字段，可以进行 �
 	</tr>
 </table>
 
-##	关于NULL的概念
+##	2.关于NULL的概念
 NULL表示 不可用、未赋值、不知道、不适用 ， 它既不是0 也不是空格。一个数值与NULL进行四则运算，其结果是NULL。
 
-##	字符串连接操作符： "||"
-SELECT name || ' salary is ' || salary as INFO
-FROM employees;
+##	3.字符串连接操作符： "||"
+SELECT name || ' salary is ' || salary as INFO   
+FROM employees;   
 <table>
 	<tr>
 		<td>INFO</td>
@@ -49,8 +50,8 @@ FROM employees;
 	</tr>
 </table>
 
-##	DISTINCT 去除重复行
-SELECT salary FROM employees; 默认情况，返回所有行，包括重复行
+##	4.DISTINCT 去除重复行
+SELECT salary FROM employees; 默认情况，返回所有行，包括重复行   
 <table>
 	<tr>
 		<td>salary</td>
@@ -71,7 +72,7 @@ SELECT salary FROM employees; 默认情况，返回所有行，包括重复行
 		***
 	</tr>
 </table>
-SELECT DISTINCT salary FROM employees; 使用DISTINCT消除重复结果行
+SELECT DISTINCT salary FROM employees; 使用DISTINCT消除重复结果行   
 <table>
 	<tr>
 		<td>salary</td>
