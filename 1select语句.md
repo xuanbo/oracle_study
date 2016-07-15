@@ -24,9 +24,6 @@ SQL语句中的数学表达式：对于数值和日期型字段，可以进行 �
 		<td>6000</td>
 		<td>6300</td>
 	</tr>
-	<tr>
-		***
-	</tr>
 </table>
 
 ##	2.关于NULL的概念
@@ -45,9 +42,6 @@ FROM employees;
 	</tr>
 	<tr>
 		<td>李四 salary is 6000</td>
-	</tr>
-	<tr>
-		***
 	</tr>
 </table>
 
@@ -70,9 +64,6 @@ SELECT salary FROM employees; 默认情况，返回所有行，包括重复行
 	<tr>
 		<td>6000</td>
 	</tr>
-	<tr>
-		***
-	</tr>
 </table>
 SELECT DISTINCT salary FROM employees; 使用DISTINCT消除重复结果行  
 *结果：*  
@@ -85,9 +76,6 @@ SELECT DISTINCT salary FROM employees; 使用DISTINCT消除重复结果行
 	</tr>
 	<tr>
 		<td>6000</td>
-	</tr>
-	<tr>
-		***
 	</tr>
 </table>
 

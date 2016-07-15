@@ -22,9 +22,6 @@
 		<td>李四</td>
 		<td>90</td>
 	<tr>
-	<tr>
-		***
-	</tr>
 </table>
 
 ##	2.比较操作符：
@@ -90,17 +87,14 @@
 		<td>李四</td>
 		<td>2500</td>
 	<tr>
-	<tr>
-		***
-	</tr>
 </table>
 如果要搜索统配符本身该怎么办呢？  
 这需要使用ESCAPE 标识转义字符：<pre>select * from t_char where a like „%\%%' escape '\';</pre>
 
 ##	3.使用ORDER BY 子句进行排序：
 *	ASC:升序	(默认，可以省略不写)
-*	DEDC:倒序
-例如：	
+*	DEDC:倒序	
+例如：  
 	SELECT name, department_id, salary
 	FROM employees
 	ORDER BY department_id, salary DESC;
@@ -131,8 +125,5 @@
 		<td>赵六</td>
 		<td>2</td>
 		<td>4000</td>
-	</tr>
-	<tr>
-		...
 	</tr>
 </table>
