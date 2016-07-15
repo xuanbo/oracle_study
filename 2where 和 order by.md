@@ -3,8 +3,7 @@
 
 	SELECT *|{[DISTINCT] column|expression [alias],...}  
 	FROM table  
-	[WHERE condition(s)];
-
+	[WHERE condition(s)];	
 比如:  
 	SELECT name, department_id FROM employees WHERE department_id = 90 ;  
 结果:	
@@ -94,7 +93,7 @@
 ##	3.使用ORDER BY 子句进行排序：
 *	ASC:升序	(默认，可以省略不写)
 *	DEDC:倒序	
-例如：  
+例如：	  
 	SELECT name, department_id, salary
 	FROM employees
 	ORDER BY department_id, salary DESC;
