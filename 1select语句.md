@@ -7,8 +7,10 @@
 *	FROM 表示要从哪些表中取
 
 SQL语句中的数学表达式：对于数值和日期型字段，可以进行 “加减乘除”   
-例如：  
-	SELECT name, salary, salary + 300 FROM employees;
+例如：	
+
+	SELECT name, salary, salary + 300 FROM employees;	
+	
 *结果：*  
 <table>
 	<tr>
