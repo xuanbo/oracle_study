@@ -1,7 +1,8 @@
 #	SELECT 语句
 ##	1.格式
-SELECT * | {[DISTINCT] column | expression [alias],...}  
-FROM table;
+	SELECT * | {[DISTINCT] column | expression [alias],...}  
+	FROM table;	
+	
 *	SELECT 表示要取哪些列
 *	FROM 表示要从哪些表中取
 
@@ -66,7 +67,9 @@ NULL表示 不可用、未赋值、不知道、不适用 ， 它既不是0 也�
 		<td>6000</td>
 	</tr>
 </table>
-	SELECT DISTINCT salary FROM employees; 使用DISTINCT消除重复结果行  
+
+	SELECT DISTINCT salary FROM employees; 使用DISTINCT消除重复结果行		
+
 *结果：*  
  <table>
 	<tr>
