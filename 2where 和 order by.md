@@ -101,11 +101,9 @@
 *	ASC:升序	(默认，可以省略不写)
 *	DEDC:倒序
 例如：	
-
 	SELECT name, department_id, salary
 	FROM employees
 	ORDER BY department_id, salary DESC;
-
 结果:	
 
 <table>
