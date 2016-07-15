@@ -98,9 +98,11 @@
 *	DEDC:倒序	
 
 例如：	  
+
 	SELECT name, department_id, salary
 	FROM employees
-	ORDER BY department_id, salary DESC;
+	ORDER BY department_id, salary DESC;	
+	
 结果:	
 
 <table>
