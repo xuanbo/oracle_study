@@ -1,15 +1,15 @@
 #	条件限制和排序
 ##	1.条件限制的关键词：WHERE
 
-	SELECT *|{[DISTINCT] column|expression [alias],...}  
-	FROM table  
-	[WHERE condition(s)];	
+	SELECT *|{[DISTINCT] column|expression [alias],...}
+	FROM table
+	[WHERE condition(s)];
 
-比如:  
+比如:
 
-	SELECT name, department_id FROM employees WHERE department_id = 90 ;  
+	SELECT name, department_id FROM employees WHERE department_id = 90 ;
 
-结果:	
+结果:
 
 <table>
 	<tr>
@@ -73,8 +73,10 @@
 		<td>是一个空值</td>
 	</tr>
 </table>
+
 例如：
 <pre>SELECT name, salary FROM employees WHERE salary <= 3000;</pre>
+
 结果：
 <table>
 	<tr>
@@ -90,20 +92,22 @@
 		<td>2500</td>
 	<tr>
 </table>
-如果要搜索统配符本身该怎么办呢？  
+
+
+如果要搜索统配符本身该怎么办呢？
 这需要使用ESCAPE 标识转义字符：<pre>select * from t_char where a like „%\%%' escape '\';</pre>
 
 ##	3.使用ORDER BY 子句进行排序：
 *	ASC:升序	(默认，可以省略不写)
-*	DEDC:倒序	
+*	DEDC:倒序
 
-例如：	  
+例如：
 
 	SELECT name, department_id, salary
 	FROM employees
-	ORDER BY department_id, salary DESC;	
-	
-结果:	
+	ORDER BY department_id, salary DESC;
+
+结果:
 
 <table>
 	<tr>
