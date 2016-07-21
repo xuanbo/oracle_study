@@ -10,19 +10,21 @@
 *	语法:
 
 
-    identifier [CONSTANT] datatype [NOT NULL]
-    [:= | DEFAULT expr];
-
+```
+identifier [CONSTANT] datatype [NOT NULL]
+[:= | DEFAULT expr];
+```
 
 *	举例:
 
 
-    DECLARE
-        v_hiredate DATE;
-        v_deptno NUMBER(2) NOT NULL := 10;
-        v_location VARCHAR2(13) := 'Atlanta';
-        c_comm CONSTANT NUMBER := 1400;
-
+```
+DECLARE
+    v_hiredate DATE;
+    v_deptno NUMBER(2) NOT NULL := 10;
+    v_location VARCHAR2(13) := 'Atlanta';
+    c_comm CONSTANT NUMBER := 1400;
+```
 
 ###	2.2	声明跟某个类型一致的变量`%TYPE`
 PLSQL特有的`%TYPE`属性来声明与XX类型一致的变量类型:
